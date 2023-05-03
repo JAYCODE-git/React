@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+
+    <script type="text/babel">
+        function Header() {
+            return (
+                <header>
+                    <h1>hello world shop</h1>
+                    <nav>
+                        <ul>
+                            <HeaderLi />
+                            <HeaderLi />
+                            <HeaderLi />
+                            <HeaderLi />
+                            <HeaderLi />
+                        </ul>
+                    </nav>
+                </header>
+            );
+        }
+
+        function Main() {
+            return (
+                <main>
+                    <h2>hello world!</h2>
+                    <p>product list</p>
+                    <ul>
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                        <MainLi />
+                    </ul>
+                </main>
+            );
+        }
+
+        function Footer() {
+            return (
+                <footer>
+                    <h2>hello footer!</h2>
+                    <address>제주시 인다 1길</address>
+                </footer>
+            )
+        }
+
+        // 요소 생성 함수
+        function HeaderLi() {
+            return (
+                <li>링크</li>
+            )
+        }
+
+        function MainLi() {
+            return (
+                <li>best seller 옷</li>
+            )
+        }
+
+
+        const body = (
+            <div>
+                <Header />
+                <Main />
+                <Footer />
+            </div>
+        );
+
+        const domContainer = document.getElementById('root');
+        const root = ReactDOM.createRoot(domContainer);
+        root.render(body);
+    </script>
+</body>
+
+</html>
