@@ -1,0 +1,9 @@
+.container-list {
+    height: auto;
+    width: 250px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
