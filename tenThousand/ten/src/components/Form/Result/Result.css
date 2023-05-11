@@ -1,0 +1,20 @@
+.result {
+    margin: 0;
+}
+
+.result p strong {
+    font-size: 4.8rem;
+    font-family: var(--bold);
+    padding: 0 8px;
+}
+
+.result button {
+    margin: 100px 8px;
+}
+
+@media (max-width:768px) {
+    .result p strong {
+        display: block;
+        padding: 8px 0;
+    }
+}

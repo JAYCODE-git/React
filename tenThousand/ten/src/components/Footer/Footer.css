@@ -1,0 +1,12 @@
+footer p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    font-family: 'Noto Sans KR';
+    opacity: 0.5;
+}
+
+footer img {
+    width: 80px;
+    display: block;
+    margin: 0 auto 24px;
+}
