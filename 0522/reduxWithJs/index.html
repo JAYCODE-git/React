@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💜 reduxWithJs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Fascinate&family=Kdam+Thmor+Pro&family=Noto+Sans+KR:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+
+<body>
+    <input type="text" name="inputText" id="inputText">
+
+    <input type="button" value="Change Text!" onclick="
+        const textValue = document.getElementById('inputText').value;
+        store.dispatch({type: 'TEXT', text:textValue});
+        ">
+    <input type="button" value="Rounded" onclick="
+        store.dispatch({type: 'STYLE_BORDER', borderRadius:'10px'});
+        ">
+    <input type="button" value="Circle" onclick="
+        store.dispatch({type: 'STYLE_BORDER', borderRadius:'50%'});
+        ">
+    <input type="button" value="Rect" onclick="
+        store.dispatch({type: 'STYLE_BORDER', borderRadius:'0'});
+    ">
+    <input type="button" value="Red!" onclick="
+        store.dispatch({type: 'STYLE_BORDER_COLOR', border:'5px solid red'});
+        ">
+    <input type="button" value="Green!" onclick="
+        store.dispatch({type: 'STYLE_BORDER_COLOR', border:'5px solid green'});
+        ">
+    <input type="button" value="Blue!" onclick="
+        store.dispatch({type: 'STYLE_BORDER_COLOR', border:'5px solid blue'});
+        ">
+
+
+    <div class="container">
+        <div id="item1" class="item"></div>
+        <div id="item2" class="item"></div>
+        <div id="item3" class="item"></div>
+        <div id="item4" class="item"></div>
+        <div id="item5" class="item"></div>
+        <div id="item6" class="item"></div>
+    </div>
+
+    <script src="asset/script.js"></script>
+</body>
+
+</html>

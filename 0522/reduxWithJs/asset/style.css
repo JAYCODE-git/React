@@ -1,0 +1,56 @@
+body {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: min(100%, 800px);
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 40px auto 0;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
+input[type=text] {
+    display: block;
+    margin: 20px auto;
+}
+
+.item {
+    border: 5px solid #ddd;
+    height: 100px;
+    padding: 20px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1) {
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.item:nth-child(2) {
+    font-family: 'Fascinate', cursive;
+}
+
+.item:nth-child(3) {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.item:nth-child(4) {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.item:nth-child(5) {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.item:nth-child(6) {
+    font-family: 'Roboto', sans-serif;
+}
